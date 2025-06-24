@@ -4,7 +4,7 @@ import boto3
 sns_client = boto3.client('sns')
 codepipeline_client = boto3.client('codepipeline')
 
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:418295691381:PipelineNotifications:77ea151e-50d0-4c67-a90f-d509cca0a3fa'
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:418295691381:PipelineNotifications'
 
 def lambda_handler(event, context):
     print(event)
